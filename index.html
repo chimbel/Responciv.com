@@ -1,10 +1,115 @@
 <!DOCTYPE html>
-  <head>
-    <script>
-       window.location.href = 'https://chimbel.com/';
-      </script>
-  </head>
-	<body>
-	You are being redirected...
-	</body>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://responciv.co/css/normalize.css">
+  <link rel="stylesheet" href="https://responciv.co/css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap" rel="stylesheet">
+  <style>
+    html, body, div {
+      height: 100%;
+      background: #171815;
+      overflow: hidden;
+      font-size: 100px;
+    }
+    body div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    body > div {
+      flex-basis: 0px;
+      flex-grow: 1;
+    }
+    .green, .purple {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .green {
+      font-size: 1rem;
+      color: #7ED8C2;
+      padding-left: 100px;
+      padding-right: 100px; 
+    }
+    .purple {
+      font-size: .3rem;
+      color: #AB87F4;
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+    .walkthrough {
+      height: 100%;
+    }
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: center;
+    }
+    .logo {
+      padding: 20px;
+    }
+
+    @media only screen and (max-width: 1250px) {
+      html, body, div {
+        font-size: 85px;
+        height: auto;        
+        overflow: auto;
+      }
+      body div {
+        flex-direction: column;
+      }
+      .purple {
+        padding-bottom: 80px;
+      }
+    } 
+    @media only screen and (max-width: 725px) {
+      .walkthrough{
+        height: auto;
+        width: 100%;
+      }
+    }
+     @media only screen and (max-width: 600px) {
+      .green, .purple {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .green {
+        font-size: .6rem;
+      }
+      .purple {
+        font-size: .2rem;
+      }
+    } 
+  </style>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146518189-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-146518189-1');
+  </script>
+
+</head>
+
+<body>
+  <div>
+    <div class="logo-container">
+      <p class="green">RESPON<span style="font-weight: 900">CIV</span></p>
+      <p class="purple">RESPON<span style="font-weight: 900">CIV</span> is a lobbying intelligence application for businesses of all sizes.</p>
+    </div>
+    <img class="walkthrough" src="img/ResponcivWalkthrough_Extended.gif"/>
+  </div>
+</body>
+
 </html>
